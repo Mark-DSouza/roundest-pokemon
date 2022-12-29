@@ -1,4 +1,4 @@
-const MAX_DEX_ID = 5;
+const MAX_DEX_ID = 493;
 
 export const getRandomPokemon: (notThisOne?: number) => number = (
   notThisOne
@@ -12,5 +12,5 @@ export const getRandomPokemon: (notThisOne?: number) => number = (
 export const getOptionsForVote = () => {
   const firstId = getRandomPokemon();
   const secondId = getRandomPokemon(firstId);
-  return [firstId, secondId];
+  return { firstId, secondId };
 };
