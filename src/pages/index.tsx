@@ -18,23 +18,23 @@ export default function Home({
       <div className="flex max-w-2xl items-center justify-between rounded border p-8">
         <div className="flex h-64 w-64 flex-col">
           <img
-            src={firstPokemon.data.pokemon.sprites.front_default ?? ""}
+            src={firstPokemon.data.sprites.front_default ?? ""}
             alt="First Pokemon"
             className="w-full"
           />
           <div className="-mt-8 text-center text-xl capitalize">
-            {firstPokemon.data.pokemon.name}
+            {firstPokemon.data.name}
           </div>
         </div>
         <div className="p-8">VS</div>
         <div className="flex h-64 w-64 flex-col">
           <img
-            src={secondPokemon.data.pokemon.sprites.front_default ?? ""}
+            src={secondPokemon.data.sprites.front_default ?? ""}
             alt="First Pokemon"
             className="w-full"
           />
           <div className="mt-[-2rem] text-center text-xl capitalize">
-            {secondPokemon.data.pokemon.name}
+            {secondPokemon.data.name}
           </div>
         </div>
         <div className="p-2" />
